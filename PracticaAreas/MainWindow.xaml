@@ -1,0 +1,76 @@
+﻿<Window x:Class="PracticaAreas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaAreas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="29"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="0"  HorizontalAlignment="Left" FontFamily="ScriptC" FontSize="20" FontWeight="Bold">Área de figuras geométricas</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Left" FontFamily="ScriptC" FontWeight="Bold" >Rectangulo</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >base</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="2"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >altura</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="2"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >área:</TextBlock>
+        <TextBox Name="baserect" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <TextBox Name="alturarect" Grid.Column="1" Grid.Row="3"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <Button Click="btn1_Click" Name="btn1" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" FontFamily="SWMono">Calcular</Button>
+        <TextBlock Name="recttotal" Grid.Column="3" Grid.Row="3"  HorizontalAlignment="Left" FontFamily="SWMono" >0.0</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Left" FontFamily="ScriptC" FontWeight="Bold" >Triangulo</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="5"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >base</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="5"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >altura</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="5"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >área:</TextBlock>
+        <TextBox Name="basetr" Grid.Column="0" Grid.Row="6"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <TextBox Name="altr" Grid.Column="1" Grid.Row="6"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <Button Click="bnt2_Click" Name="bnt2" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center" FontFamily="SWMono">Calcular</Button>
+        <TextBlock Name="trtotal" Grid.Column="3" Grid.Row="6"  HorizontalAlignment="Left" FontFamily="SWMono" >0.0</TextBlock>
+
+
+        <TextBlock Grid.Column="0" Grid.Row="7"  HorizontalAlignment="Left" FontFamily="ScriptC" FontWeight="Bold" >Circulo</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="8"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >radio</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="8"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >área:</TextBlock>
+        <TextBox Name="radcir" Grid.Column="0" Grid.Row="9"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <Button Click="btn3_Click"  Name="btn3" Grid.Column="2" Grid.Row="9" HorizontalAlignment="Center" FontFamily="SWMono">Calcular</Button>
+        <TextBlock Name="cirtotal" Grid.Column="3" Grid.Row="9"  HorizontalAlignment="Left" FontFamily="SWMono" >0.0</TextBlock>
+
+        <TextBlock Grid.Column="0" Grid.Row="10"  HorizontalAlignment="Left" FontFamily="ScriptC" FontWeight="Bold" >Trapecio</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="11"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >base mayor</TextBlock>
+        <TextBlock Grid.Column="1" Grid.Row="11"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >base menor</TextBlock>
+        <TextBlock Grid.Column="3" Grid.Row="11"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >área:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="12"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <TextBox Grid.Column="1" Grid.Row="12"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+        <Button Grid.Column="2" Grid.Row="12" HorizontalAlignment="Center" FontFamily="SWMono">Calcular</Button>
+        <TextBlock Grid.Column="3" Grid.Row="12"  HorizontalAlignment="Left" FontFamily="SWMono" >0.0</TextBlock>
+        <TextBlock Grid.Column="0" Grid.Row="13"  HorizontalAlignment="Left" FontFamily="ScriptC" Foreground="#FF2D4D6E" >altura</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="14"  HorizontalAlignment="Left" FontFamily="SWMono"  Width="138" >0</TextBox>
+
+
+    </Grid>
+</Window>
