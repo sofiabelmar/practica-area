@@ -56,5 +56,17 @@ namespace PracticaAreas
 
             cirtotal.Text = acir.ToString();
         }
+
+        private void btn4_Click(object sender, RoutedEventArgs e)
+        {
+            float menor = float.Parse(bmenor.Text);
+            float mayor = float.Parse(bmayor.Text);
+            float altura = float.Parse(alturatrap.Text);
+
+            float atrap = altura * ((menor + mayor) / 2);
+
+            areatrap.Text = atrap.ToString();
+
+        }
     }
 }
