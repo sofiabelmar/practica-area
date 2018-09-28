@@ -104,6 +104,17 @@ namespace PracticaAreas
 
             {
                 case 0: //cuadrado
+
+                    var controlAreaRectangulo = (ControlAreaRectangulo)PanelConfiguracion.Children[0];
+
+                        float baser=  float.Parse( controlAreaRectangulo.baserect.Text);
+
+                        float alturar = float.Parse(controlAreaRectangulo.alturarect.Text);
+
+                         area = baser * alturar;
+
+                     
+
                     break;
                 case 1: //triangulo
                     break;
@@ -114,6 +125,7 @@ namespace PracticaAreas
                 case 4: //trapecio
                     break;
             }
+
             lblResultadoArea.Text = area.ToString();
         }
     }
